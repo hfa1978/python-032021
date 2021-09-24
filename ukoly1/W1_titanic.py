@@ -7,10 +7,10 @@ import pandas
 import requests
 import numpy
 
-r = requests.get("https://raw.githubusercontent.com/pesikj/progr2-python/master/data/tested.csv")
-open("tested.csv", 'wb').write(r.content)
+r = requests.get("https://raw.githubusercontent.com/pesikj/progr2-python/master/data/titanic.csv")
+open("titanic.csv", 'wb').write(r.content)
 
-cestujici = pandas.read_csv("tested.csv")
+cestujici = pandas.read_csv("titanic.csv")
 #print(cestujici.columns)
 #print(cestujici.head())
 # Index(['PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',

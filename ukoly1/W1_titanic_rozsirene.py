@@ -8,9 +8,9 @@ import pandas
 import requests
 import numpy
 
-r = requests.get("https://raw.githubusercontent.com/pesikj/progr2-python/master/data/tested.csv")
-open("tested.csv", 'wb').write(r.content)
-cestujici = pandas.read_csv("tested.csv")
+r = requests.get("https://raw.githubusercontent.com/pesikj/progr2-python/master/data/titanic.csv")
+open("titanic.csv", 'wb').write(r.content)
+cestujici = pandas.read_csv("titanic.csv")
 
 cestujici_1trida = cestujici.loc[cestujici["Pclass"]==1]
 print(cestujici_1trida)
