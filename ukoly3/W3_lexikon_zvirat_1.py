@@ -21,7 +21,7 @@ print(zvirata)
 def check_url(radek):
   if isinstance(radek.image_src, str):
     if radek.image_src.startswith("https://zoopraha.cz/images/"):
-      if radek.image_src.endswith("jpg" or "JPG"):
+      if radek.image_src.endswith("jpg") or radek.image_src.endswith("JPG"):
         return radek
 for radek in zvirata.itertuples():
   if not check_url(radek):
