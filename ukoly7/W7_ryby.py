@@ -12,7 +12,7 @@ df = pandas.read_csv("Fish.csv")
 print(df.head())
 print(df.columns)
 print(df.dtypes)
-#Index(['Species', 'Weight', 'Length1', 'Length2', 'Length3', 'Height','Width']
+['Species', 'Weight', 'Length1', 'Length2', 'Length3', 'Height','Width']
 
 #Ryby
 #V souboru Fish.csv najdeš informace o rybách z rybího trhu: délku (vertikální - Length1, diagonální - Length2 a úhlopříčnou - Length3), výšku, šířku, živočišný druh ryby, hmnotnost ryby.
